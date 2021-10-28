@@ -1,0 +1,13 @@
+$colours: (
+  greybg: #e5e5e5,
+  greycard: #e2e2e2,
+  greynav: #8d8d8d,
+  greytitle: #6a6a6a,
+  beige: #f4f3ee,
+  white: #ffffff,
+  pink: #c32c72,
+);
+
+@function getColour($colour) {
+  @return map-get($colours, $colour);
+}

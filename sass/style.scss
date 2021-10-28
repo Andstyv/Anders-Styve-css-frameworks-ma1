@@ -1,40 +1,11 @@
-$colours: (
-  greybg: #e5e5e5,
-  greycard: #e2e2e2,
-  greynav: #8d8d8d,
-  greytitle: #6a6a6a,
-  beige: #f4f3ee,
-  white: #ffffff,
-  pink: #c32c72,
-);
+@import "partials/nav";
+@import "partials/variables";
+@import "partials/footer";
 
 body {
   display: flex;
   flex-direction: column;
-  background-color: map-get($colours, greybg);
-}
-.nav {
-  background-color: map-get($colours, beige) !important;
-}
-.nav__container__logo {
-  color: #262626 !important;
-  font-size: 36px;
-}
-.navlist__item {
-  text-transform: uppercase;
-
-  &__link {
-    color: map-get($colours, greynav) !important;
-  }
-  &__link--active {
-    color: map-get($colours, pink) !important;
-  }
-}
-@media (max-width: 768px) {
-  .navlist {
-    padding-bottom: 52px;
-    margin-top: 20px;
-  }
+  background-color: getColour(greybg);
 }
 
 .main-container {
@@ -45,21 +16,21 @@ body {
   margin-top: 164px;
   margin-bottom: 54px;
   font-size: 34px;
-  color: map-get($colours, greytitle);
+  color: getColour(greytitle);
 }
 .square-container__square {
   width: 264px;
   height: 263px;
-  background-color: map-get($colours, beige);
+  background-color: getColour(beige);
   margin-bottom: 25px;
   border-radius: 15px;
 
   &--white {
-    background-color: map-get($colours, white) !important;
-    border: 3px solid map-get($colours, pink);
+    background-color: getColour(white) !important;
+    border: 3px solid getColour(pink);
   }
   &--grey {
-    border: 3px solid map-get($colours, white);
+    border: 3px solid getColour(white);
   }
 }
 @media (max-width: 768px) {
@@ -71,28 +42,5 @@ body {
     width: 357px;
     max-width: 100%;
     height: 358px;
-  }
-}
-
-.footer {
-  background-color: map-get($colours, beige);
-}
-.footer__container {
-  height: 44px;
-  color: map-get($colours, greynav);
-  font-size: 12px;
-
-  &__link {
-    color: map-get($colours, greynav) !important;
-  }
-}
-@media (max-width: 768px) {
-  .footer {
-    background-color: map-get($colours, white);
-  }
-  .footer__container {
-    height: 92px;
-    flex-direction: column;
-    justify-content: space-evenly !important;
   }
 }

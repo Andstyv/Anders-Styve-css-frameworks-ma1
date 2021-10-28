@@ -1,0 +1,22 @@
+.footer {
+  background-color: getColour(beige);
+}
+.footer__container {
+  height: 44px;
+  color: map-get($colours, greynav);
+  font-size: 12px;
+
+  &__link {
+    color: map-get($colours, greynav) !important;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    background-color: getColour(white);
+  }
+  .footer__container {
+    height: 92px;
+    flex-direction: column;
+    justify-content: space-evenly !important;
+  }
+}

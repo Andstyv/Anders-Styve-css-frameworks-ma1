@@ -1,0 +1,26 @@
+.nav {
+  background-color: getColour(beige) !important;
+}
+.nav__container__logo {
+  color: #262626 !important;
+  font-size: 36px;
+}
+.navlist__item {
+  text-transform: uppercase;
+
+  &__link {
+    color: getColour(greynav) !important;
+  }
+  &__link--active {
+    color: getColour(pink) !important;
+  }
+}
+@media (max-width: 768px) {
+  .nav {
+    box-shadow: 1px 1px 5px 1px rgba(128, 128, 128, 0.164);
+  }
+  .navlist {
+    padding-bottom: 52px;
+    margin-top: 20px;
+  }
+}

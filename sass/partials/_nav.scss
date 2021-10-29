@@ -1,13 +1,24 @@
 .nav {
   background-color: getColour(beige) !important;
 }
-.nav__container__logo {
+.nav__logo {
   color: #262626 !important;
   font-size: 36px;
+  font-family: getFont(main), sans-serif;
+  font-weight: 300;
 }
-.navlist__item {
-  text-transform: uppercase;
+.nav__btn {
+  border: none;
+  color: getColour(greytitle) !important;
+}
 
+.navlist {
+  font-family: getFont(second), sans-serif;
+  font-size: 18px;
+
+  &__item {
+    text-transform: uppercase;
+  }
   &__link {
     color: getColour(greynav) !important;
   }
@@ -15,9 +26,10 @@
     color: getColour(pink) !important;
   }
 }
+
 @media (max-width: 768px) {
   .nav {
-    box-shadow: 1px 1px 5px 1px rgba(128, 128, 128, 0.164);
+    box-shadow: 1px 1px 5px 1px rgba(128, 128, 128, 0.15);
   }
   .navlist {
     padding-bottom: 52px;

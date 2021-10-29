@@ -1,10 +1,12 @@
 .footer {
   background-color: getColour(beige);
 }
-.footer__container {
+.footcont {
   height: 44px;
   color: map-get($colours, greynav);
   font-size: 12px;
+  font-family: getFont(main), sans-serif;
+  font-weight: 300;
 
   &__link {
     color: map-get($colours, greynav) !important;
@@ -14,7 +16,7 @@
   .footer {
     background-color: getColour(white);
   }
-  .footer__container {
+  .footcont {
     height: 92px;
     flex-direction: column;
     justify-content: space-evenly !important;

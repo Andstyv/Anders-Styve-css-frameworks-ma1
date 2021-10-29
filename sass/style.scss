@@ -1,46 +1,4 @@
-@import "partials/nav";
 @import "partials/variables";
+@import "partials/content";
+@import "partials/nav";
 @import "partials/footer";
-
-body {
-  display: flex;
-  flex-direction: column;
-  background-color: getColour(greybg);
-}
-
-.main-container {
-  margin-bottom: 210px;
-}
-.title {
-  font-family: "open sans";
-  margin-top: 164px;
-  margin-bottom: 54px;
-  font-size: 34px;
-  color: getColour(greytitle);
-}
-.square-container__square {
-  width: 264px;
-  height: 263px;
-  background-color: getColour(beige);
-  margin-bottom: 25px;
-  border-radius: 15px;
-
-  &--white {
-    background-color: getColour(white) !important;
-    border: 3px solid getColour(pink);
-  }
-  &--grey {
-    border: 3px solid getColour(white);
-  }
-}
-@media (max-width: 768px) {
-  .title {
-    margin-top: 103px;
-    margin-bottom: 30px;
-  }
-  .square-container__square {
-    width: 357px;
-    max-width: 100%;
-    height: 358px;
-  }
-}
